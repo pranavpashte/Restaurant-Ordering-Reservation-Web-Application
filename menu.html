@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Urban Bites - Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="menu-page">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Urban Bites</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact(Reserved Table).html">Contact(Reserved Table)</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="bg-warning text-dark text-center py-5">
+    <h1 class="fw-bold">Our Menu</h1>
+    <p class="lead">Delicious dishes crafted just for you</p>
+  </header>
+
+  <!-- Filter Dropdown -->
+  <div class="container my-4 text-center">
+    <label for="menuFilter" class="form-label fw-bold">Filter Menu:</label>
+    <select id="menuFilter" class="form-select w-auto d-inline-block">
+      <option value="all">All</option>
+      <option value="starters">Starters</option>
+      <option value="main">Main Course</option>
+      <option value="desserts">Desserts</option>
+    </select>
+  </div>
+
+  <!-- Menu Items -->
+  <div class="container my-5">
+    <div class="row g-4">
+
+      <!-- Starters -->
+      <div class="col-md-3 menu-item" data-category="starters" data-price="249" data-dish="Paneer Tikka">
+        <div class="card h-100">
+          <img src="images/air-fryer-paneer-tikka-featured.jpg" class="card-img-top" alt="Paneer Tikka" width="200" height="200" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Paneer Tikka</h5>
+            <p class="card-text">Grilled cottage cheese marinated with spices.</p>
+            <p class="fw-bold">₹249</p>
+            <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 menu-item" data-category="starters" data-price="179" data-dish="Fresh Salad">
+        <div class="card h-100">
+          <img src="images/classic-caesar-salad-recipe-996054-Hero_01-33c94cc8b8e841ee8f2a815816a0af95.jpg" class="card-img-top" alt="Fresh Salad" width="200" height="200" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Fresh Salad</h5>
+            <p class="card-text">A refreshing mix of greens, veggies, and dressing.</p>
+            <p class="fw-bold">₹179</p>
+            <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 menu-item" data-category="starters" data-price="129" data-dish="Tomato Soup">
+        <div class="card h-100">
+          <img src="images/soup.jpg" class="card-img-top" alt="Tomato Soup" width="200" height="200" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Tomato Soup</h5>
+            <p class="card-text">Classic creamy tomato soup with herbs.</p>
+            <p class="fw-bold">₹129</p>
+            <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Course -->
+      <div class="col-md-3 menu-item" data-category="main" data-price="399" data-dish="Chicken Biryani">
+        <div class="card h-100">
+          <img src="images/authentic-chicken-biryani-50434132.png" class="card-img-top" alt="Chicken Biryani" width="200" height="200" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Chicken Biryani</h5>
+            <p class="card-text">Aromatic basmati rice cooked with spiced chicken.</p>
+            <p class="fw-bold">₹399</p>
+            <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 menu-item" data-category="main" data-price="449" data-dish="Butter Chicken">
+        <div class="card h-100">
+          <img src="images/butter chicken.jpg" class="card-img-top" alt="Butter Chicken" width="200" height="200" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Butter Chicken</h5>
+            <p class="card-text">Tender chicken in a creamy tomato gravy.</p>
+            <p class="fw-bold">₹449</p>
+            <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 menu-item" data-category="main" data-price="229" data-dish="Veg Fried Rice">
+        <div class="card h-100">
+          <img src="images/veg-fried-rice-recipe.jpg" class="card-img-top" alt="Veg Fried Rice" width="200" height="200" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Veg Fried Rice</h5>
+            <p class="card-text">Rice stir-fried with fresh vegetables and sauces.</p>
+            <p class="fw-bold">₹229</p>
+            <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="col-md-3 menu-item" data-category="desserts" data-price="99" data-dish="Ice Cream">
+        <div class="card h-100">
+          <img src="images/ice cream.jpg" class="card-img-top" alt="Ice Cream" width="200" height="200" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Ice Cream</h5>
+            <p class="card-text">Assorted flavors of creamy ice cream.</p>
+            <p class="fw-bold">₹99</p>
+            <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 menu-item" data-category="desserts" data-price="199" data-dish="Chocolate Cake">
+        <div class="card h-100">
+          <img src="images/cake.jpg" class="card-img-top" alt="Chocolate Cake" width="200" height="200" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Chocolate Cake</h5>
+            <p class="card-text">Rich and moist layered chocolate cake.</p>
+            <p class="fw-bold">₹199</p>
+            <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 menu-item" data-category="desserts" data-price="149" data-dish="Gulab Jamun">
+        <div class="card h-100">
+          <img src="images/gulab jamun 9.JPG" class="card-img-top" alt="Gulab Jamun" width="200" height="200" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Gulab Jamun</h5>
+            <p class="card-text">Soft fried dumplings soaked in sugar syrup.</p>
+            <p class="fw-bold">₹149</p>
+            <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Cart Summary Button (hidden initially) -->
+  <div id="cartSummary" class="cart-summary d-none" title="View Cart">
+    Cart (0)
+  </div>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="cart-modal d-none" role="dialog" aria-modal="true" aria-labelledby="cartModalTitle">
+    <div class="cart-modal-content">
+      <button id="closeCart" class="close-btn" aria-label="Close Cart">&times;</button>
+      <h3 id="cartModalTitle">Your Cart</h3>
+      <ul id="cartList" class="list-group mb-3"></ul>
+      <p id="totalPrice" class="fw-bold"></p>
+
+      <h3>Order Details</h3>
+      <form id="orderForm" novalidate>
+        <div class="mb-3">
+          <label for="customerName" class="form-label">First Name</label>
+          <input type="text" id="customerName" class="form-control" required />
+          <div class="invalid-feedback">Please enter your first name.</div>
+        </div>
+        <div class="mb-3">
+          <label for="phoneNumber" class="form-label">Mobile Number</label>
+          <input type="tel" id="phoneNumber" class="form-control" required pattern="[0-9]{10}" />
+          <div class="invalid-feedback">Please enter a valid 10-digit mobile number.</div>
+        </div>
+        <div class="mb-3">
+          <label for="address" class="form-label">Address</label>
+          <textarea id="address" class="form-control" rows="2" required></textarea>
+          <div class="invalid-feedback">Please enter your address.</div>
+        </div>
+        <div class="mb-3">
+          <label for="orderType" class="form-label">Order Type</label>
+          <select id="orderType" class="form-select" required>
+            <option value="">Select Option</option>
+            <option value="Eat In">Eat at Restaurant</option>
+            <option value="Parcel">Takeaway (Parcel)</option>
+          </select>
+          <div class="invalid-feedback">Please select an order type.</div>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Confirm Order</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Urban Bites</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>

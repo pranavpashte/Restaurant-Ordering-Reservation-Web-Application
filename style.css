@@ -1,0 +1,150 @@
+/* Fix navbar overlap */
+body {
+  padding-top: 56px; /* height of navbar */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: url('images/background 1.jpg') center/cover no-repeat;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* overlay */
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+  padding-top: 120px; /* push text below navbar */
+  text-align: center;
+}
+
+/* Background for menu.html */
+body.menu-page {
+  background: url('images/background2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #f8f9fa; /* fallback color */
+  color: white; /* global text color */
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Background for contact(Reserved Table).html */
+body.contact-page {
+  background: url('images/background2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #e9ecef; /* fallback color */
+  color: white;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Overlay for better text readability */
+body.menu-page::before,
+body.contact-page::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+/* Cart summary button */
+.cart-summary {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0d6efd;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  user-select: none;
+}
+
+/* Cart modal overlay */
+.cart-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+}
+
+/* Cart modal content */
+.cart-modal-content {
+  background: white;
+  color: #212529; /* dark text for readability */
+  padding: 20px 30px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Ensure labels inside modal are visible and styled */
+.cart-modal-content label.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #212529; /* dark text */
+}
+
+/* Inputs, textarea, select inside modal */
+.cart-modal-content input,
+.cart-modal-content textarea,
+.cart-modal-content select {
+  color: #212529;
+  background-color: #fff;
+}
+
+/* Invalid feedback text color */
+.cart-modal-content .invalid-feedback {
+  color: #dc3545;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Hide elements with d-none */
+.d-none {
+  display: none !important;
+}
+
+/* Bootstrap invalid feedback display fix */
+input.is-invalid, textarea.is-invalid, select.is-invalid {
+  border-color: #dc3545;
+}
+
+input.is-invalid:focus, textarea.is-invalid:focus, select.is-invalid:focus {
+  box-shadow: 0 0 0 0.25rem rgba(220,53,69,.25);
+}
+
+/* Responsive tweak for modal height on small screens */
+@media (max-height: 600px) {
+  .cart-modal-content {
+    max-height: 80vh;
+  }
+}
