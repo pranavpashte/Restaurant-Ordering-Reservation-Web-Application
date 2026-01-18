@@ -19,5 +19,6 @@ A responsive restaurant web application that allows users to order food and rese
 1. Download or clone the repository
 2. Open index.html in any web browser
 
-## Screenshots
-(Add screenshots here)
+## Screenshots added
+
+
