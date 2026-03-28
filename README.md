@@ -1,4 +1,4 @@
-# Restaurant Ordering & Reservation Web Application
+# Online Food Ordering & Reservation Table Web Application
 
 A responsive restaurant web application that allows users to order food and reserve tables online.
 
